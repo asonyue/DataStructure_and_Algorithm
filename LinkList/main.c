@@ -3,7 +3,11 @@
 //
 #include "linkList.h"
 
+struct Node *first = NULL;
+
 int main() {
+
+    struct Node *temp;
 
     int A[] = {3, 5, 7, 10, 15};
     create(A, 5);

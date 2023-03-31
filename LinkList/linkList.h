@@ -12,5 +12,9 @@ struct Node {
 
 void create(int A[], int n);
 void Display(struct Node* p);
+int count(struct Node* p);
+int sum(struct Node* p);
+int max(struct Node* p);
+struct Node* LSearch(struct Node* p, int key);
 
 #endif //DATASTRUCTURE_AND_ALGORITHM_LINKLIST_H
