@@ -172,3 +172,20 @@ void mergeTwoSorted(struct Node** head1, struct Node** head2, struct Node** head
         temp2 = temp2->next;
     }
 }
+
+// Check loop
+int isLoop(struct Node** head_ref) {
+    struct Node* p, *q;
+    p = q = *head_ref;
+    do {
+        p = p->next;
+        q = q->next;
+        q = q? q->next:q;
+    } while (p && q && p != q);
+
+    if(p == q) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
