@@ -4,13 +4,6 @@ Implementing Data Structure and Algorithm using C
 
 ## (Part 1) Link List Implementation
 
-### Create:
-This function is used to create a linked list from the main function.
-It creates the first node at first. Afterward, it creates other
-nodes and update the tail pointer point to the current nodes from the
-previous node to connect them together and the tail pointer will move
-to the current node.
-
 ### Display:
 When the current pointer pointed to a node that is not NULL,
 It will continuously to print out the value of each node and
