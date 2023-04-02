@@ -6,3 +6,5 @@ set(CMAKE_C_STANDARD 11)
 include_directories(LinkList)
 
 add_executable(DataStructure_and_Algorithm LinkList/main.c LinkList/linkList.c)
+
+add_executable(Circular CircularLinkList/Circular.c)

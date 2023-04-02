@@ -21,4 +21,5 @@ void Insert(struct Node** head_ref, int index, int value);
 int Delete(struct Node** head_ref, int index);
 void Reverse(struct Node** head_ref);
 void mergeTwoSorted(struct Node** head1, struct Node** head2, struct Node** head3);
+int isLoop(struct Node** head_ref);
 #endif //DATASTRUCTURE_AND_ALGORITHM_LINKLIST_H
