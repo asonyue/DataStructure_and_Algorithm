@@ -10,3 +10,7 @@ add_executable(DataStructure_and_Algorithm LinkList/main.c LinkList/linkList.c)
 add_executable(Circular CircularLinkList/Circular.c)
 
 add_executable(Doubly DoublyLinkedList/dbLinkList.c)
+
+add_executable(Challenge1 LinkedListChallenge/Challenge1.c)
+
+
