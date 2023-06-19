@@ -63,15 +63,33 @@ struct Node* Search(int key) {
     return NULL;
 }
 
+struct Node *RInsert(struct Node *p, int key) {
+
+    struct Node *t = NULL;
+    if(p == NULL) {
+        t = (struct Node *)malloc(sizeof(struct Node));
+        t->data = key;
+        t->lChild = t->rChild = NULL;
+        return t;
+    }
+    if(key < p->data) {
+        p->lChild = RInsert(p->lChild, key);
+    } else if(key > p->data) {
+        p->rChild = RInsert(p->rChild, key);
+    }
+    return p;
+}
+
+
 int main() {
 
     struct Node* temp;
 
-    Insert(10);
-    Insert(5);
-    Insert(20);
-    Insert(8);
-    Insert(30);
+    root = RInsert(root, 10);
+    RInsert(root, 5);
+    RInsert(root, 20);
+    RInsert(root, 8);
+    RInsert(root, 30);
 
     Inorder(root);
     printf("\n");
